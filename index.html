@@ -1,0 +1,485 @@
+
+Skip to content
+
+    Pull requests
+    Issues
+    Marketplace
+    Explore
+
+    @punk-AJ
+
+0
+0
+
+    0
+
+punk-AJ/portfolio
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Insights
+Settings
+portfolio/index.html
+ef95448 4 minutes ago
+@punk-AJ punk-AJ Update index.html
+445 lines (442 sloc) 10.8 KB
+<title>120/120 Challenge</title>
+<html>
+  <body>
+    <a href="https://www.linkedin.com/in/pankaj1261/"><b>@Linkedin profile</b></a>
+    <br><br>
+    <b>120 vulns in 120 days challenge on <a href="https://www.synack.com/red-team">Synack Red Team</a></b>
+    <p>Vuln total will include Accepted, Rejected, Duplicate, Merge, and Out of scope</p>
+    <ul>
+      <li>Start Date: October 18, 2018</li>
+      <li>End Date: February 15, 2019</li>
+    </ul>
+    <style>
+      table {
+      font-family: arial, sans-serif ;
+      border-collapse: collapse;
+      width: 25%
+      }
+      td,th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+      }
+      tr:nth-child(even) {
+      background-color: #dddddd;
+      }
+    </style>
+    <table>
+      <tr>
+	<th>Categories</th>
+	<th># of Vulns</th>
+      </tr>
+      <tr>
+	<td>Reflected XSS</td>
+	<td>5</td>
+      </tr>
+      <tr>
+	<td>Persistent XSS</td>
+	<td>29</td>
+      </tr>
+      <tr>
+	<td>Cross-site Request Forgery</td>
+	<td>25</td>
+      </tr>
+      <tr>
+	<td>Improper Input Validation</td>
+	<td>4</td>
+      </tr>
+      <tr>
+	<td>Access/Privacy Control</td>
+	<td>24</td>
+      </tr>
+      <tr>
+	<td>Insecure Direct Object Reference</td>
+	<td>17</td>
+      </tr>
+      <tr>
+	<td>Functionality Abuse with Malicious Impact</td>
+	<td>4</td>
+      </tr>
+      <tr>
+	<td>Sensitive Information Disclosure</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>Client-Side Validation</td>
+	<td>1</td>
+      </tr>
+      <tr>
+	<td>Server-Side Request Forgery</td>
+	<td>1</td>
+      </tr>
+      <tr>
+	<td>Path Traversal</td>
+	<td>3</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+	<th>Accepted</th>
+	<th>Duplicates</th>
+	<th>Rejected</th>
+	<th>Pending</th>
+      </tr>
+      <tr>
+	<td>81</td>
+	<td>20</td>
+	<td>15</td>
+	<td>0</td>
+      </tr>
+    </table>
+    <br>
+    <b>Total Vulnerabilities Submitted: 116</b>
+    <br>
+    <b>Total Reports Submitted (including resubmissions): 126</b>
+    <p><b>Week 1 (10/18/2017 - 10/24/2018): <i>10 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Oct 18</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+	<li>Accepted - Access/Privacy Control</li>
+      </ul>
+      <li>Oct 22</li>
+      <ul>
+	<li>Accepted - Improper Input Validation</li>
+      </ul>
+      <li>Oct 23</li>
+      <ul>
+	<li>Accepted - Access/Privacy Control</li>
+	<li>Duplicate - Reflected XSS</li>
+	<li>Duplicate - Persistent XSS</li>
+	<li>Duplicate - CSRF</li>
+      </ul>
+      <li>Oct 24</li>
+      <ul>
+	<li>Accepted - CSRF</li>
+	<li>Accepted - CSRF</li>
+	<li>Accepted - Improper Input Validation</li>
+      </ul>
+    </ul>
+    <p><b>Week 2: (10/25/2018 - 10/31/2018): <i>7 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Oct 25</li>
+      <ul>
+	<li>Accepted - Sensitive Information Disclosure</li>
+      </ul>
+      <li>Oct 28</li>
+      <ul>
+	<li>Duplicate - Persistent XSS</li>
+	<li>Duplicate - Functionality Abuse with Malicious Impact</li>
+	<li>Duplicate - Functionality Abuse with Malicious Impact</li>
+      </ul>
+      <li>Oct 31</li>
+      <ul>
+	<li>Accepted - Reflected XSS</li>
+	<li>Merged - CSRF</li>
+	<li>Accepted - CSRF</li>
+      </ul>
+    </ul>
+    <p><b>Week 3: (11/01/2018 - 11/07/2018): <i>2 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Hacking Break</li>
+      <li>Nov 1</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+      <li>Nov 4</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+    </ul>
+    <p><b>Week 4: (11/08/2018 - 11/14/2018): <i>9 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Nov 8</li>
+      <ul>
+	<li>Accepted - Access/Privacy Control</li>
+	<li>Accepted - Access/Privacy Control</li>
+      </ul>
+      <li>Nov 9</li>
+      <ul>
+	<li>Accepted - Access/Privacy Control</li>
+      </ul>
+      <li>Nov 10</li>
+      <ul>
+	<li>Rejected - Insecure Direct Object Reference</li>
+      </ul>
+      <li>Nov 12</li>
+      <ul>
+	<li>Accepted - Reflected XSS</li>
+      </ul>
+      <li>Nov 13</li>
+      <ul>
+	<li>Rejected - Access/Privacy Control</li>
+      </ul>
+      <li>Nov 14</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+	<li>Duplicate - Access/Privacy Control</li>
+	<li>Duplicate - Persistent XSS</li>
+      </ul>
+    </ul>
+    <p><b>Week 5: (11/15/2018 - 11/21/2018): <i>7 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Nov 16</li>
+      <ul>
+	<li>Accepted - Access/Privacy Control</li>
+	<li>Rejected - CSRF</li>
+	<li>Accepted - Insecure Direct Object Reference</li>
+      </ul>
+      <li>Nov 18</li>
+      <ul>
+	<li>Accepted - Sensitive Information Disclosure</li>
+	<li>Accepted - Access/Privacy Control</li>
+      </ul>
+      <li>Nov 20</li>
+      <ul>
+	<li>Accepted - Access/Privacy Control</li>
+	<li>Accepted - CSRF</li>
+      </ul>
+    </ul>
+    <p><b>Week 6: (11/22/2018 - 11/28/2018): <i>4 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Hacking Break</li>
+      <li>Nov 22</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+	<li>Rejected - Persistent XSS</li>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+      <li>Nov 26</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+    </ul>
+    <p><b>Week 7: (11/29/2018 - 12/05/2018): <i>10 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Nov 29</li>
+      <ul>
+	<li>Accepted - Reflected XSS</li>
+	<li>Duplicate - Insecure Direct Object Reference</li>
+	<li>Accepted - CSRF</li>
+	<li>Accepted - CSRF</li>
+      </ul>
+      <li>Nov 30</li>
+      <ul>
+	<li>Accepted - Client-Side Validation</li>
+      </ul>
+      <li>Dec 1</li>
+      <ul>
+	<li>Duplicate - Access/Privacy Control</li>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+      <li>Dec 3</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+	<li>Accepted - Persistent XSS</li>
+	<li>Accpeted - Persistent XSS</li>
+      </ul>
+    </ul>
+    <p><b>Week 8: (12/06/2018 - 12/12/2018): <i>18 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Dec 6</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+	<li>Accepted - CSRF</li>
+      </ul>
+      <li>Dec 7</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+	<li>Accepted - Insecure Direct Object Reference</li>
+	<li>Accepted - Insecure Direct Object Reference</li>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+      <li>Dec 8</li>
+      <ul>
+	<li>Accepted - Improper Input Validation</li>
+	<li>Accepted - Access/Privacy Control</li>
+	<li>Accepted - Persistent XSS</li>
+	<li>Accepted - Persistent XSS</li>
+	<li>Accepted - Access/Privacy Control</li>
+	<li>Accepted - Access/Privacy Control</li>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+      <li>Dec 9</li>
+      <ul>
+	<li>Rejected - Access/Privacy Control</li>
+	<li>Accepted - Insecure Direct Object Reference</li>
+      </ul>
+      <li>Dec 10</li>
+      <ul>
+	<li>Accepted - Insecure Direct Object Reference</li>
+      </ul>
+      <li>Dec 11</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+      <li>Dec 12</li>
+      <ul>
+	<li>Rejected - Access/Privacy Control</li>
+      </ul>
+    </ul>
+    <p><b>Week 9: (12/13/2018 - 12/19/2018): <i>3 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Hacking Break</li>
+      <li>Dec 17</li>
+      <ul>
+	<li>Accepted - Insecure Direct Object Reference</li>
+      </ul>
+      <li>Dec 18</li>
+      <ul>
+	<li>Accepted - CSRF</li>
+	<li>Rejected - Access/Privacy Control</li>
+      </ul>
+    </ul>
+    <p><b>Week 10: (12/20/2018 - 12/26/2018): <i>11 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Dec 19</li>
+      <ul>
+	<li>Accepted - Insecure Direct Object Reference</li>
+      </ul>
+      <li>Dec 20</li>
+      <ul>
+	<li>Accepted - CSRF</li>
+      </ul>
+      <li>Dec 22</li>
+      <ul>
+	<li>Rejected - CSRF</li>
+	<li>Accepted - Server-Side Request Forgery</li>
+      </ul>
+      <li>Dec 23</li>
+      <ul>
+	<li>Duplicate - CSRF</li>
+	<li>Accepted - CSRF</li>
+      </ul>
+      <li>Dec 24</li>
+      <ul>
+	<li>Accepted - Functionality Abuse with Malicious Impact</li>
+	<li>Accepted - CSRF</li>
+      </ul>
+      <li>Dec 26</li>
+      <ul>
+	<li>Rejected - CSRF</li>
+	<li>Duplicate - CSRF</li>
+	<li>Accepted - CSRF</li>
+      </ul>
+    </ul>
+    <p><b>Week 11: (12/27/2018 - 01/02/2019): <i>5 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Hacking Break</li>
+      <li>Dec 30</li>
+      <ul>
+	<li>Rejected - CSRF</li>
+	<li>Rejected - CSRF</li>
+      </ul>
+      <li>Jan 1</li>
+      <ul>
+	<li>Duplicate - Access/Privacy Control</li>
+      </ul>
+      <li>Jan 2</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+    </ul>
+    <p><b>Week 12: (01/03/2019 - 01/09/2019): <i>5 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Jan 3</li>
+      <ul>
+	<li>Rejected - CSRF</li>
+	<li>Accepted - Path Traversal</li>
+	<li>Accepted - Path Traversal</li>
+	<li>Accepted - Path Traversal</li>
+      </ul>
+      <li>Jan 6</li>
+      <ul>
+	<li>Accepted - Access/Privacy Control</li>
+      </ul>
+    </ul>
+    <p><b>Week 13: (01/10/2019 - 01/16/2019): <i>2 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Hacking Break</li>
+      <li>Jan 15</li>
+      <ul>
+	<li>Duplicate - Insecure Direct Object Reference</li>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+    </ul>
+    <p><b>Week 14: (01/17/2019 - 01/23/2019): <i>5 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Hacking Break</li>
+      <li>Jan 17</li>
+      <ul>
+	<li>Duplicate - Access/Privacy Control</li>
+      </ul>
+      <li>Jan 18</li>
+      <ul>
+	<li>Duplicate - Insecure Direct Object Reference</li>
+      </ul>
+      <li>Jan 21</li>
+      <ul>
+	<li>Accepted - CSRF</li>
+      </ul>
+      <li>Jan 22</li>
+      <ul>
+	<li>Duplicate - Insecure Direct Object Reference</li>
+      </ul>
+      <li>Jan 23</li>
+      <ul>
+	<li>Accepted - Persistent XSS</li>
+      </ul>
+    </ul>
+    <p><b>Week 15: (01/24/2019 - 01/30/2019): <i>7 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Jan 24</li>
+      <ul>
+	<li>Accepted - Improper Input Validation</li>
+	<li>Accepted - Access/Privacy Control</li>
+	<li>Duplicate - Access/Privacy Control</li>
+      </ul>
+      <li>Jan 26</li>
+      <ul>
+	<li>Accepted - Insecure Direct Object Reference</li>
+	<li>Accepted - Access/Privacy Control</li>
+      </ul>
+      <li>Jan 27</li>
+      <ul>
+	<li>Duplicate - Functionality Abuse with Malicious Impact</li>
+	<li>Accepted - Insecure Direct Object Reference</li>
+      </ul>
+    </ul>
+    <p><b>Week 16: (01/31/2019 - 02/06/2019): <i>9 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Feb 2</li>
+      <ul>
+	<li>Rejected - Sensitive Information Disclosure</li>
+	<li>Accepted - Persistent XSS</li>
+	<li>Duplicate - Persistent XSS</li>
+      </ul>
+      <li>Feb 3</li>
+      <ul>
+	<li>Rejected - Persistent XSS</li>
+	<li>Accepted - Insecure Direct Object Reference</li>
+	<li>Accepted - Insecure Direct Object Reference</li>
+      </ul>
+      <li>Feb 5</li>
+      <ul>
+	<li>Accepted - CSRF</li>
+	<li>Accepted - Reflected XSS</li>
+	<li>Accepted - Access/Privacy Control</li>
+      </ul>
+    </ul>
+    <p><b>Week 17: (02/07/2019 - 02/13/2019): <i>2 Vulns Submitted</i></b></p>
+    <ul>
+      <li>Feb 7</li>
+      <ul>
+	<li>Accepted - Insecure Direct Object Reference</li>
+	<li>Rejected - CSRF</li>
+      </ul>
+    </ul>
+    <p><b>(FINAL) Week 18: (02/14/2019 - 02/15/2019):</b></p>
+  </body>
+</html>
+
+    © 2019 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+Press h to open a hovercard with more details.
